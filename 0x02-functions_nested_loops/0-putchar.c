@@ -1,4 +1,6 @@
-#include <main.h>
+#include <unistd.h>
+#include "main.h"
+#include "0-putchar.c"
 
 /**
  * main - Check description
@@ -8,7 +10,7 @@
 
 int main(void)
 {
-	char word[7] = "putchar";
+	char word[8] = "_putchar";
 	int i;
 
 	for (i = 0; i < 9; i++)
