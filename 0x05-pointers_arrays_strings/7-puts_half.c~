@@ -1,31 +1,17 @@
-include "main.h"
+#include <stdio.h>
+
+void puts_half(char *);
 
 /**
- * puts_half - function that prints a string foolowed by new line to stdout
- * @str: string to print
- * Return: void
+ * main - check the code for Holberton School students.
+ *
+ * Return: Always 0.
  */
-
-void puts_half(char *str)
+int main(void)
 {
-	int i, j;
-	char c;
+	char *str;
 
-	c = *str;
-	i = 0;
-	while (c)
-	{
-		i++;
-		c = *(str + i);
-	}
-	if (i % 2 == 0)
-		j = i / 2;
-	else
-		j = (i + 1) / 2;
-	while (j < i)
-	{
-		_putchar(*(str + j));
-		j++;
-	}
-	_putchar('\n');
+	str = "Holberton!";
+	puts_half(str);
+	return (0);
 }
